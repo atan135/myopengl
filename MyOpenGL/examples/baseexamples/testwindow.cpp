@@ -1,4 +1,4 @@
-
+ï»¿
 #include "../config.h"
 
 const char* vertexCode = "#version 330 core\n"
@@ -20,15 +20,15 @@ const char* fragmentCode = "#version 330 core\n"
 
 int testwindow()
 {
-	// ³õÊ¼»¯glfs
+	// åˆå§‹åŒ–glfs
 	init_glfw();
-	// ³õÊ¼»¯window
+	// åˆå§‹åŒ–window
 	GLFWwindow* window = create_glfwwindow("LearnOpenGL");
-	// ³õÊ¼»¯glad
+	// åˆå§‹åŒ–glad
 	if (init_glad() != 0)
 		return -1;
 
-	// ³õÊ¼»¯shader	
+	// åˆå§‹åŒ–shader	
 	int success = 0;
 	char infoLog[512];
 	unsigned int vertexShader, fragmentShader;
@@ -62,7 +62,7 @@ int testwindow()
 	}
 
 	float vertics[] = {
-		// ×ø±ê           ÑÕÉ«
+		// åæ ‡           é¢œè‰²
 		0.0f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
 	   -0.5f,-0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
 		0.5f,-0.5f, 0.0f, 0.0f, 0.0f, 1.0f,

@@ -1,4 +1,4 @@
-#include "../config.h"
+ï»¿#include "../config.h"
 int testshader()
 {
 	init_glfw();
@@ -8,7 +8,7 @@ int testshader()
 	MyShader myShader("../MyOpenGL/shader/baseshader/baseshader.vshader", "../MyOpenGL/shader/baseshader/baseshader.fshader");
 
 	float vertics[] = {
-		// ×ø±ê           ÑÕÉ«
+		// åæ ‡           é¢œè‰²
 		0.0f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
 	   -0.5f,-0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
 		0.5f,-0.5f, 0.0f, 0.0f, 0.0f, 1.0f,

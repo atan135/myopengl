@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <glm\gtc\type_ptr.hpp>
 class MyShader
 {

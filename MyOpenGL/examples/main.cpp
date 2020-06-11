@@ -1,8 +1,8 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "config.h"
 int main()
 {
-	// ·Ö±ðµ÷ÓÃ¶ÔÓ¦µÄ²âÊÔ
+	// åˆ†åˆ«è°ƒç”¨å¯¹åº”çš„æµ‹è¯•
 	//testwindow();
 	testshader();
 }

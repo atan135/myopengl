@@ -1,5 +1,5 @@
-#include "config.h"
-// Í¨ÓÃ·½·¨
+ï»¿#include "config.h"
+// é€šç”¨æ–¹æ³•
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
 	glViewport(0, 0, width, height);
