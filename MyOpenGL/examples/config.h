@@ -18,3 +18,5 @@ int init_glad();
 int testwindow();
 int testshader();
 int testimage();
+int testgml();
+int testspace();

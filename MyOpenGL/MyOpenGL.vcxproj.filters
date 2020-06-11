@@ -42,6 +42,12 @@
     <ClCompile Include="examples\baseexamples\testimage.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="examples\baseexamples\testgml.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\baseexamples\testspace.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="examples\config.h">
@@ -52,7 +58,13 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\baseshader\baseshader.fshader" />
-    <None Include="shader\baseshader\textureshader.fshader" />
+    <None Include="shader\baseshader\gml.vs" />
+    <None Include="shader\baseshader\gml.fs" />
+    <None Include="shader\baseshader\baseshader.fs" />
+    <None Include="shader\baseshader\baseshader.vs" />
+    <None Include="shader\baseshader\textureshader.fs" />
+    <None Include="shader\baseshader\textureshader.vs" />
+    <None Include="shader\baseshader\tspace.vs" />
+    <None Include="shader\baseshader\tspace.fs" />
   </ItemGroup>
 </Project>

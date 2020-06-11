@@ -5,7 +5,7 @@ int testshader()
 	GLFWwindow* window = create_glfwwindow("LearnOpenGL");
 	init_glad();
 
-	MyShader myShader("../MyOpenGL/shader/baseshader/baseshader.vshader", "../MyOpenGL/shader/baseshader/baseshader.fshader");
+	MyShader myShader("../MyOpenGL/shader/baseshader/baseshader.vs", "../MyOpenGL/shader/baseshader/baseshader.fs");
 
 	float vertics[] = {
 		// 坐标           颜色

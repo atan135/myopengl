@@ -5,5 +5,7 @@ int main()
 	// 分别调用对应的测试
 	//testwindow();
 	//testshader();
-	testimage();
+	//testimage();
+	//testgml();
+	testspace();
 }

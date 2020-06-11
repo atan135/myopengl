@@ -128,8 +128,10 @@
     <Library Include="libs\glfw3.lib" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="examples\baseexamples\testgml.cpp" />
     <ClCompile Include="examples\baseexamples\testimage.cpp" />
     <ClCompile Include="examples\baseexamples\testshader.cpp" />
+    <ClCompile Include="examples\baseexamples\testspace.cpp" />
     <ClCompile Include="examples\baseexamples\testwindow.cpp" />
     <ClCompile Include="examples\commonfunc.cpp" />
     <ClCompile Include="examples\main.cpp" />
@@ -142,8 +144,14 @@
     <ClInclude Include="include\myshader\myshader.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\baseshader\baseshader.fshader" />
-    <None Include="shader\baseshader\textureshader.fshader" />
+    <None Include="shader\baseshader\baseshader.fs" />
+    <None Include="shader\baseshader\baseshader.vs" />
+    <None Include="shader\baseshader\gml.fs" />
+    <None Include="shader\baseshader\gml.vs" />
+    <None Include="shader\baseshader\textureshader.fs" />
+    <None Include="shader\baseshader\textureshader.vs" />
+    <None Include="shader\baseshader\tspace.fs" />
+    <None Include="shader\baseshader\tspace.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
