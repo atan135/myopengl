@@ -39,6 +39,9 @@
     <ClCompile Include="examples\baseexamples\testshader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="examples\baseexamples\testimage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="examples\config.h">
@@ -50,5 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="shader\baseshader\baseshader.fshader" />
+    <None Include="shader\baseshader\textureshader.fshader" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include <glad\glad.h>
 #include <GLFW\glfw3.h>
+#include "../include/stb-master/stb_image.h"
 #include <iostream>
 #include "../include/myshader/myshader.h"
 // 通用配置
@@ -16,3 +17,4 @@ int init_glad();
 // 测试代码
 int testwindow();
 int testshader();
+int testimage();
