@@ -48,6 +48,9 @@
     <ClCompile Include="examples\baseexamples\testspace.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="examples\baseexamples\testcamera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="examples\config.h">

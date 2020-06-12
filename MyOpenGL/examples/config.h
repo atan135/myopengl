@@ -20,3 +20,4 @@ int testshader();
 int testimage();
 int testgml();
 int testspace();
+int testcamera();

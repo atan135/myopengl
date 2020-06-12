@@ -7,5 +7,6 @@ int main()
 	//testshader();
 	//testimage();
 	//testgml();
-	testspace();
+	//testspace();
+	testcamera();
 }

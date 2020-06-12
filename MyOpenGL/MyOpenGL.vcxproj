@@ -128,6 +128,7 @@
     <Library Include="libs\glfw3.lib" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="examples\baseexamples\testcamera.cpp" />
     <ClCompile Include="examples\baseexamples\testgml.cpp" />
     <ClCompile Include="examples\baseexamples\testimage.cpp" />
     <ClCompile Include="examples\baseexamples\testshader.cpp" />
