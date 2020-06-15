@@ -4,6 +4,7 @@
 #include "../include/stb-master/stb_image.h"
 #include <iostream>
 #include "../include/myshader/myshader.h"
+#include "camera.h"
 // 通用配置
 const int WINDOW_WIDTH = 800;
 const int WINDOW_HEIGHT = 600;
@@ -21,3 +22,5 @@ int testimage();
 int testgml();
 int testspace();
 int testcamera();
+// 光照测试
+int testlightbase();

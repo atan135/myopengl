@@ -51,12 +51,18 @@
     <ClCompile Include="examples\baseexamples\testcamera.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="examples\lightexample\testlightbase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="examples\config.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\myshader\myshader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -69,5 +75,9 @@
     <None Include="shader\baseshader\textureshader.vs" />
     <None Include="shader\baseshader\tspace.vs" />
     <None Include="shader\baseshader\tspace.fs" />
+    <None Include="shader\lightshader\lightshader.fs" />
+    <None Include="shader\lightshader\objectshader.vs" />
+    <None Include="shader\lightshader\objectshader.fs" />
+    <None Include="shader\lightshader\lightshader.vs" />
   </ItemGroup>
 </Project>

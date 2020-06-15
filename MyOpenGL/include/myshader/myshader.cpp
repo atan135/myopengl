@@ -87,3 +87,7 @@ void MyShader::SetMat4(const char* arg, glm::mat4& value)
 {
 	glUniformMatrix4fv(glGetUniformLocation(ID, arg), 1, GL_FALSE, glm::value_ptr(value));
 }
+void MyShader::SetVec3(const char* arg, float v1, float v2, float v3)
+{
+	glUniform3f(glGetUniformLocation(ID, arg), v1, v2, v3);
+}

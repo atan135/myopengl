@@ -8,5 +8,7 @@ int main()
 	//testimage();
 	//testgml();
 	//testspace();
-	testcamera();
+	//testcamera();
+
+	testlightbase();
 }

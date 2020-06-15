@@ -9,6 +9,7 @@ public:
 	void SetInt(const char* arg, int value);
 	void SetFloat(const char* arg, float value);
 	void SetMat4(const char* arg, glm::mat4& value);
+	void SetVec3(const char* arg, float v1, float v2, float v3);
 	void Close();
 	void Use();
 };
