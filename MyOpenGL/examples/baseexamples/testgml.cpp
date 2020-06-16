@@ -71,9 +71,9 @@ int testgml()
 		std::cout << "Error load awesomeface.png fail" << std::endl;
 	}
 	stbi_image_free(data);
-	shader.Use();
-	shader.SetInt("texture1", 0);
-	shader.SetInt("texture2", 1);
+	shader.use();
+	shader.setInt("texture1", 0);
+	shader.setInt("texture2", 1);
 
 	glm::mat4 trans = glm::mat4(1.0f);
 	trans = glm::translate(trans, glm::vec3(0.0f, 0.5f, 0.0f));
@@ -89,9 +89,9 @@ int testgml()
 		glActiveTexture(GL_TEXTURE1);
 		glBindTexture(GL_TEXTURE_2D, texture2);
 
-		shader.Use();
+		shader.use();
 		trans = glm::rotate(trans, glm::radians((float)glfwGetTime() / 180.0f), glm::vec3(0.0f, 0.0f, 1.0f));
-		shader.SetMat4("transform", trans);
+		shader.setMat4("transform", trans);
 		glBindVertexArray(VAO);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 

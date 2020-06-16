@@ -78,24 +78,24 @@ int testlightbase()
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		objectshader.Use();
-		objectshader.SetVec3("objectColor", 1.0f, 0.5f, 0.31f);
-		objectshader.SetVec3("lightColor", 1.0f, 1.0f, 1.0f);
+		objectshader.use();
+		objectshader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
+		objectshader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
 		glm::mat4 model = glm::mat4(1.0f);
 		glm::mat4 view = camera.GetViewMatrix();
 		glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)WINDOW_WIDTH / (float)WINDOW_HEIGHT, 0.01f, 100.0f);
-		objectshader.SetMat4("model", model);
-		objectshader.SetMat4("view", view);
-		objectshader.SetMat4("projection", projection);
+		objectshader.setMat4("model", model);
+		objectshader.setMat4("view", view);
+		objectshader.setMat4("projection", projection);
 
 		glBindVertexArray(VAO);
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
-		lightshader.Use();
-		lightshader.SetMat4("view", view);
-		lightshader.SetMat4("projection", projection);
+		lightshader.use();
+		lightshader.setMat4("view", view);
+		lightshader.setMat4("projection", projection);
 		model = glm::translate(model, glm::vec3(1.2f, 1.2f, 2.0f));
-		lightshader.SetMat4("model", model);
+		lightshader.setMat4("model", model);
 
 		glBindVertexArray(lightVAO);
 		glDrawArrays(GL_TRIANGLES, 0, 36);

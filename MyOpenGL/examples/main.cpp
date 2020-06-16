@@ -10,5 +10,6 @@ int main()
 	//testspace();
 	//testcamera();
 
-	testlightbase();
+	//testlightbase();
+	testphonelight();
 }

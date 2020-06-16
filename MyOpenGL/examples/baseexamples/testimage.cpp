@@ -75,9 +75,9 @@ int testimage()
 	}
 	stbi_image_free(data);
 
-	shader.Use();
-	shader.SetInt("texture1", 0);
-	shader.SetInt("texture2", 1);
+	shader.use();
+	shader.setInt("texture1", 0);
+	shader.setInt("texture2", 1);
 
 	while (!glfwWindowShouldClose(window))
 	{
@@ -90,7 +90,7 @@ int testimage()
 		glActiveTexture(GL_TEXTURE1);
 		glBindTexture(GL_TEXTURE_2D, texture2);
 
-		shader.Use();
+		shader.use();
 		glBindVertexArray(VAO);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 

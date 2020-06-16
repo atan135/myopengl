@@ -67,27 +67,31 @@ void MyShader::Close()
 {
 	glDeleteProgram(ID);
 }
-void MyShader::Use()
+void MyShader::use()
 {
 	glUseProgram(ID);
 }
-void MyShader::SetBool(const char* arg, bool value)
+void MyShader::setBool(const char* arg, bool value)
 {
 	glUniform1i(glGetUniformLocation(ID, arg), (int)value);
 }
-void MyShader::SetInt(const char* arg, int value)
+void MyShader::setInt(const char* arg, int value)
 {
 	glUniform1i(glGetUniformLocation(ID, arg), value);
 }
-void MyShader::SetFloat(const char* arg, float value)
+void MyShader::setFloat(const char* arg, float value)
 {
 	glUniform1f(glGetUniformLocation(ID, arg), value);
 }
-void MyShader::SetMat4(const char* arg, glm::mat4& value)
+void MyShader::setMat4(const char* arg, glm::mat4& value)
 {
 	glUniformMatrix4fv(glGetUniformLocation(ID, arg), 1, GL_FALSE, glm::value_ptr(value));
 }
-void MyShader::SetVec3(const char* arg, float v1, float v2, float v3)
+void MyShader::setVec3(const char* arg, float v1, float v2, float v3)
 {
 	glUniform3f(glGetUniformLocation(ID, arg), v1, v2, v3);
+}
+void MyShader::setVec3(const char* arg, glm::vec3& val)
+{
+	glUniform3f(glGetUniformLocation(ID, arg), val.x, val.y, val.z);
 }

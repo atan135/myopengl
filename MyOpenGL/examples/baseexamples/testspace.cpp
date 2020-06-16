@@ -116,9 +116,9 @@ int testspace()
 	stbi_image_free(data);
 
 
-	shader.Use();
-	shader.SetInt("texture1", 0);
-	shader.SetInt("texture2", 1);
+	shader.use();
+	shader.setInt("texture1", 0);
+	shader.setInt("texture2", 1);
 	glEnable(GL_DEPTH_TEST);
 
 
@@ -139,8 +139,8 @@ int testspace()
 		glm::mat4 projection = glm::mat4(1.0f);
 		view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
 		projection = glm::perspective(glm::radians(45.0f), (float)WINDOW_WIDTH / WINDOW_HEIGHT, 0.1f, 100.0f);
-		shader.SetMat4("view", view);
-		shader.SetMat4("projection", projection);
+		shader.setMat4("view", view);
+		shader.setMat4("projection", projection);
 		for (int i = 0; i < 10; ++i)
 		{
 			glm::mat4 model = glm::mat4(1.0f);
@@ -148,7 +148,7 @@ int testspace()
 			if(i == 0 || (i+1) % 3 == 0)
 				model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(0.5f, 1.0f, 0.0f));
 
-			shader.SetMat4("model", model);
+			shader.setMat4("model", model);
 			glDrawArrays(GL_TRIANGLES, 0, 36);
 		}
 

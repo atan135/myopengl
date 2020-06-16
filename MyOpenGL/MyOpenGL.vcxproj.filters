@@ -54,6 +54,9 @@
     <ClCompile Include="examples\lightexample\testlightbase.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="examples\lightexample\testphonelight.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="examples\config.h">
@@ -79,5 +82,9 @@
     <None Include="shader\lightshader\objectshader.vs" />
     <None Include="shader\lightshader\objectshader.fs" />
     <None Include="shader\lightshader\lightshader.vs" />
+    <None Include="shader\lightshader\phoneobject.fs" />
+    <None Include="shader\lightshader\phoneobject.vs" />
+    <None Include="shader\lightshader\phonelight.fs" />
+    <None Include="shader\lightshader\phonelight.vs" />
   </ItemGroup>
 </Project>

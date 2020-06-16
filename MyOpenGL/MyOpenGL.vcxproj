@@ -136,6 +136,7 @@
     <ClCompile Include="examples\baseexamples\testwindow.cpp" />
     <ClCompile Include="examples\commonfunc.cpp" />
     <ClCompile Include="examples\lightexample\testlightbase.cpp" />
+    <ClCompile Include="examples\lightexample\testphonelight.cpp" />
     <ClCompile Include="examples\main.cpp" />
     <ClCompile Include="include\glad.c" />
     <ClCompile Include="include\myshader\myshader.cpp" />
@@ -159,6 +160,10 @@
     <None Include="shader\lightshader\lightshader.vs" />
     <None Include="shader\lightshader\objectshader.fs" />
     <None Include="shader\lightshader\objectshader.vs" />
+    <None Include="shader\lightshader\phonelight.fs" />
+    <None Include="shader\lightshader\phonelight.vs" />
+    <None Include="shader\lightshader\phoneobject.fs" />
+    <None Include="shader\lightshader\phoneobject.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

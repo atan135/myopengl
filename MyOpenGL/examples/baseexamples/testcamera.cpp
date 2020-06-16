@@ -130,9 +130,9 @@ int testcamera()
 	stbi_image_free(data);
 
 
-	shader.Use();
-	shader.SetInt("texture1", 0);
-	shader.SetInt("texture2", 1);
+	shader.use();
+	shader.setInt("texture1", 0);
+	shader.setInt("texture2", 1);
 	glEnable(GL_DEPTH_TEST);
 
 
@@ -156,16 +156,16 @@ int testcamera()
 
 		glm::mat4 projection = glm::mat4(1.0f);
 		projection = glm::perspective(glm::radians(fov), (float)WINDOW_WIDTH / WINDOW_HEIGHT, 0.1f, 100.0f);
-		shader.SetMat4("projection", projection);
+		shader.setMat4("projection", projection);
 		glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
-		shader.SetMat4("view", view);
+		shader.setMat4("view", view);
 		for (int i = 0; i < 10; ++i)
 		{
 			glm::mat4 model = glm::mat4(1.0f);
 			model = glm::translate(model, cubePositions[i]);
 			if (i == 0 || (i + 1) % 3 == 0)
 				model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(0.5f, 1.0f, 0.0f));
-			shader.SetMat4("model", model);
+			shader.setMat4("model", model);
 
 			//glm::mat4 view = glm::mat4(1.0f);
 			//float radius = 10;

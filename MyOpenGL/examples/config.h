@@ -24,3 +24,4 @@ int testspace();
 int testcamera();
 // 光照测试
 int testlightbase();
+int testphonelight();
